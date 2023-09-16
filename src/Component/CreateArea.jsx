@@ -11,9 +11,9 @@ export default function CreateArea({SubmitButton, onAdd}) {
 
   function handleChange(e) {
     const { name, value } = e.target;
-    setNote((preValue) => {
+    setNote((offValue) => {
       return {
-        ...preValue,
+        ...offValue,
         [name]: value,
       };
     });
